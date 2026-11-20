@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>1-on-1 Support | Secret Safe Spaces</title>
+</head>
+
+<body id="top">
+
+    <!-- TOP NAVIGATION MENU (FLEXBOX CONTAINER) -->
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="hugs.html">Community Wall</a>
+        <a href="connect.html" class="active">1-on-1 Support</a>
+        <a href="login.html">Register / Login</a>
+    </nav>
+
+    <!-- CONFIDENTIAL SUPPORT WELCOME BANNER -->
+    <div class="wip-banner">
+        <span class="banner-title">🌿 <strong>Confidential Listening</strong> 🌿</span>
+        <span class="banner-text">Connect privately with a trusted Support Confidant in a calm,
+            judgment-free space.</span>
+    </div>
+
+    <!-- PAGE HERO HEADER WITH 3-COLUMN FLEXBOX -->
+    <header class="header">
+        <h1>🛡️ 1-on-1 Support 🛡️</h1>
+        <p class="tagline">Start a quiet, one-on-one conversation with an active Support Confidant who is here to
+            listen and give advice, only when you want it.</p>
+
+        <div class="about-flex">
+            <!-- Left Info Card -->
+            <div class="about-box">
+                <h2>👂 What to Expect 👂</h2>
+                <p>
+                    You set the pace. Share as much or as little as you want without pressure, interruption, or
+                    unsolicited advice-just genuine human empathy.
+                </p>
+            </div>
+
+            <!-- Center Focal Image -->
+            <div class="about-image">
+                <img src="images/calm_lake.jpg" alt="Peaceful sunrise reflection over a calm lake" class="banner-img">
+            </div>
+
+            <!-- Right Info Card -->
+            <div class="about-box">
+                <h2>🔒 Your Privacy Matters 🔒</h2>
+                <p>
+                    Choose any anonymous alias you like before starting your session. Conversations stay private so you
+                    can decompress freely and safely.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- PRIVATE SESSION & CRISIS RESOURCE SECTION -->
+    <main class="wall-wrapper">
+        <div class="community-grid">
+            <!-- Left Grid Card: Private Listening Request Form -->
+            <section class="post-card grid-card" aria-labelledby="session-heading">
+                <div>
+                    <span class="tag rave">Support Confidant Available</span>
+                    <h2 id="session-heading" class="card-heading">Request a Private Listening Session</h2>
+                    <p>Share what is on your mind below. No advice unless you ask for it-just a safe, empathetic ear.
+                    </p>
+
+                    <form id="connectform" class="hug-form">
+                        <label for="alias" class="form-label">Choose an Anonymous Alias:</label>
+                        <input type="text" id="alias" class="form-input" placeholder="e.g., QuietReader, StarGazer">
+
+                        <label for="topic" class="form-label">What would you like to talk about?</label>
+                        <textarea id="topic" rows="4" class="form-textarea"
+                            placeholder="Write as much or as little as you feel comfortable sharing..."></textarea>
+
+                        <button type="button" class="btn"
+                            onclick="document.getElementById('connectConfirm').style.display='block'; document.getElementById('alias').value=''; document.getElementById('topic').value='';">🛡️
+                            Start Private Chat</button>
+                    </form>
+                </div>
+
+                <div id="connectConfirm" class="confirm-box">
+                    🛡️ <strong>Connection Request Sent!</strong> A Support Confidant will open your private listening
+                    room shortly.
+                </div>
+            </section>
+
+            <!-- Right Grid Card: Santuary Guidelines & 988 Resource -->
+            <aside class="post-card grid-card">
+                <div>
+                    <span class="tag rant">Safe Space Guidelines</span>
+                    <h2 class="card-heading">How Our 1-on-1 Rooms Work</h2>
+                    <p>
+                        Our Support Confidants are compassionate peer listeners who hold space for everyday stress,
+                        burnout, and life's heavy moments.
+                    </p>
+                    <p>
+                        Whenever you feel ready, submit your anonymous alias and topic to be paired with an available
+                        listener.
+                    </p>
+
+                    <ul class="session-checklist">
+                        <li><strong>100% Anonymous:</strong> No real names, emails, or personal details required.</li>
+                        <li><strong>Judgment-Free Zone:</strong> Share at your own comfort level without pressure.</li>
+                        <li><strong>Peer-to-Peer Support:</strong> Built for everyday venting and emotional
+                            decompression.</li>
+                    </ul>
+                </div>
+
+                <div class="crisis-box">
+                    <p><strong>Need immediate professional crisis support?</strong></p>
+                    <p>Visit the <a href="https://988lifeline.org" target="_blank" rel="noopener noreferrer"
+                            class="back-to-top">988 Suicide &amp; Crisis Lifeline</a> for free, confidential 24/7
+                        support.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- COPYRIGHT FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Secret Safe Spaces. All rights reserved. <span class="footer-divider">|</span> <a href="#top"
+                class="back-to-top">Back to Top ↑</a>
+        </p>
+    </footer>
+
+    <!-- INTERACTIVE LOGIC (JAVASCRIPT) -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
