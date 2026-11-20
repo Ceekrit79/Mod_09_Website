@@ -1,0 +1,37 @@
+CIS 155 - Module 09 Peer Feedback & Website Revisions
+Author: Secret West
+Website: Secret Safe Spaces
+
+============================================================
+PEER FEEDBACK #1 (BreAnna Taylor):
+- "Since you have buttons, I think it would help to have something happen when users hover over and click your buttons."
+- "I would like to see an about page that explains the purpose of the site a bit more in depth, or at least an aside that gives the description you give here on the discussion board. When I'm utilizing sites, I like to learn more about the creator and their overall intention behind their site!"
+- "On hugs.html, it will say virtual hug delivered even if I didn't type anything - I'd suggest making it to where users are notified nothing was written."
+
+HOW I ADDRESSED PEER FEEDBACK #1:
+1. Interactive Hover & Click Effects (nav.css, style.css & script.js):
+   - Added smooth :hover background color transitions and elevation transforms across all navigation links (.main-nav a:hover in nav.css), primary action buttons (.btn:hover in style.css), outline buttons (.btn-outline:hover in style.css), and interactive choice cards (.choice-card:hover and .hero-choice-card:hover in style.css).
+   - Connected interactive JavaScript click handlers in script.js (showFeed() and sendWarmth()) so clicking buttons displays clear on-page confirmation messages.
+
+2. Deeper Purpose & "About Us" Sections (index.html & style.css):
+   - Expanded the home page hero section in index.html with a 3-column Flexbox layout (.about-flex in style.css) featuring dedicated "Why We Exist" and "How It Works" cards on either side of the focal bamboo stones image.
+   - Added a "Your Secret Safe Space" mission section below the hero with two side-by-side Flexbox pathway cards (.pathway-cards) explaining how visitors can browse the Community Wall or request 1-on-1 Support.
+
+3. Empty-Input Validation on hugs.html (hugs.html & script.js):
+   - Created the sendWarmth() function in script.js and wired it to the "Send Warmth" button on hugs.html using input.value.trim() === ''.
+   - If a visitor clicks "Send Warmth" with an empty message box, a warm amber on-page notification appears informing them that nothing was written instead of displaying a false virtual hug delivery confirmation.
+
+============================================================
+PEER FEEDBACK #2 (Ronald Mohney):
+- "I think your page is very responsive and looks professional."
+- "Your colors work easy to read could be a bit bigger, but I do use reading glasses"
+- "As for as recommendations, Your site works I have 34in ultrawide and it looked good."
+
+HOW I ADDRESSED PEER FEEDBACK #2:
+1. Larger Font Sizes, Typography & Visual Clarity (Google Fonts, FontAwesome, nav.css & style.css):
+   - Increased the Sanctuary Welcome Banner font size in nav.css (.wip-banner) from 0.95rem to 1.05rem and widened its max-width from 900px to 1150px so the greeting text is larger, clearer, and easier to read.
+   - Linked Google Fonts ('Lora' for headings and 'Nunito' for body text) across all four HTML pages and updated style.css to improve letter readability while keeping high-contrast dark charcoal text (#2e2a27) against warm cream (#f7f4ef) and crisp white (#ffffff) surfaces.
+   - Added FontAwesome 7.3.1 icons (<i class="fa-solid ...">) to all navigation links (.main-nav) across all four HTML pages for stronger visual scannability.
+
+2. Ultrawide & Multi-Screen Responsiveness (style.css):
+   - Maintained balanced max-width containers (.about-flex at 1450px, .wall-wrapper at 1350px, .home-content at 1000px) so layouts look clean on 34-inch ultrawide monitors while adapting smoothly across tablet (768px) and mobile (560px and 360px) breakpoints.
