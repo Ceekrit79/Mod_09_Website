@@ -484,9 +484,9 @@ h3 {
   border-top: 6px solid #3f6d5a;
   border-radius: 16px;
   padding: 20px 22px 20px 36px;
-  margin: 18px 0;
+  margin: 40px 0 0 0;
   color: #2e2a27;
-  box-shadow: 0 8px 22px rgba(45, 76, 59, 0.09);
+  box-shadow: 0 8px 22px rgba(45, 76, 59, 0.9);
 }
 
 .session-checklist li {
