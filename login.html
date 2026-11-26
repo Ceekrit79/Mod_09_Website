@@ -15,37 +15,60 @@
     <link rel="stylesheet" href="https://cloudflare.com">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <title>Register / Login | Secret Safe Spaces</title>
 </head>
 
 <body id="top">
 
     <!-- TOP NAVIGATION MENU -->
-    <nav class="main-nav">
-        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="hugs.html"><i class="fa-solid fa-comments"></i> Community Wall</a>
-        <a href="connect.html"><i class="fa-solid fa-hand-holding-heart"></i> 1-on-1 Support</a>
-        <a href="login.html" class="active"><i class="fa-solid fa-user-shield"></i> Register / Login</a>
-    </nav>
+    <section class="hero-banner login-hero">
+        <nav class="main-nav">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="hugs.html"><i class="fa-solid fa-comments"></i> Community Wall</a>
+            <a href="connect.html"><i class="fa-solid fa-hand-holding-heart"></i> 1-on-1 Support</a>
+            <a href="login.html" class="active"><i class="fa-solid fa-user-shield"></i> Register / Login</a>
+        </nav>
 
-    <!-- MEMBER PORTAL WELCOME BANNER -->
-    <div class="wip-banner">
-        <span class="banner-title">🌿 <strong>Member Portal</strong> 🌿</span>
-        <span class="banner-text">Sign in to manage your saved reflections or create a free anonymous sanctuary
-            alias.</span>
-    </div>
+        <!-- PAGE HERO HEADER WITH 3-COLUMN FLEXBOX -->
+        <header class="header">
+            <span class="header-badge-left">🔑 Alias-Only Access 🔑</span>
+            <span class="header-badge-right">🌱 Free Forever 🌱</span>
+            <h1>🔑 Enter Your Oasis 🔑</h1>
+            <p class="tagline">
+                Save your favorite virtual hugs, keep track of your anonymous alias or customize how you participate as
+                a
+                Sanctuary Companion or Support Confidant.
+            </p>
 
-    <!-- PAGE HERO HEADER -->
-    <header class="header">
-        <h1>🔑 Enter Your Oasis 🔑</h1>
-        <p class="tagline">
-            Save your favorite virtual hugs, keep track of your anonymous alias or customize how you participate as a
-            Sanctuary Companion or Support Confidant.
-        </p>
-    </header>
+            <!-- MEMBER PORTAL WELCOME BANNER -->
+            <div class="wip-banner">
+                <span class="banner-title">🌿 <strong>Member Portal</strong> 🌿</span>
+                <span class="banner-text">Sign in to manage your saved reflections or create a free anonymous sanctuary
+                    alias.</span>
+            </div>
+
+            <div class="about-flex">
+                <!--- Left Card: Zero Personal Info -->
+                <div class="about-box">
+                    <h2>🛡️ Zero Personal Data 🛡️</h2>
+                    <p>No email address, phone number, or real name is ever collected. Your chosen alias keeps your
+                        sanctuary presence completely private.</p>
+                </div>
+
+                <!--- RIGHT CARD: TWO WAYS TO JOIN -->
+                <div class="about-box">
+                    <h2>🌿 Choose Your Role 🌿</h2>
+                    <p>Join as a Sanctuary Companion to save reflections on the Community Wall, or sign up as a Support
+                        Confidant for 1-on-1 listening.</p>
+                </div>
+            </div>
+        </header>
+    </section>
 
     <!-- LOGIN & REGISTRATION FORMS (CSS GRID LAYOUT) -->
     <main class="wall-wrapper">
+        <h2 class="section-heading">Member Access &amp; Alias Setup</h2>
         <div class="community-grid">
             <!-- Left Grid Card: Returning Member Login -->
             <section class="post-card grid-card" aria-labelledby="login-heading">

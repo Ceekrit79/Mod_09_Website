@@ -11,10 +11,10 @@ html {
 
 body {
   font-family: "Nunito", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: linear-gradient (180deg, #eef4ef 0%, #faf3e8 55%, #f3ece1 100%);
-  color: #2e2a27;
+  background-color: #faf3e8;
+  background: linear-gradient(180deg, #eef4ef 0%, #faf3e8 55%, #f3ece1 100%);
   margin: 0;
-  padding: 20px;
+  padding: 0px;
   line-height: 1.6;
 }
 
@@ -41,21 +41,71 @@ h3 {
    Places two text columns on either side of the focal image 
    (MULTI-STOP GRADIENT + GLOW)
    ========================================================= */
-.header {
-  background-color: #2b4a3a;
-  background-color: linear-gradient(135deg, #2b4a3a 0%, #3f6d5a 52%, #245b63 100%);
-  color: #ffffff;
-  padding: 40px 28px;
-  text-align: center;
-  border-radius: 16px;
+.hero-banner {
+  background-image: linear-gradient(rgba(20, 40, 31, 0.72), rgba(29, 54, 42, 0.80)), url("images/bamboo-stones.jpg");
+  background-size: cover;
+  border-radius: 0 0 18px 18px;
+  padding: 16px 20px 28px 20px;
   margin-bottom: 34px;
   box-shadow: 0 12px 30px rgba(36, 74, 58, 0.22);
   border-bottom: 5px solid #d48c54;
+}
+
+.hugs-hero {
+  background-image: linear-gradient(rgba(20, 40, 31, 0.72), rgba(29, 54, 42, 0.80)), url("images/BalancingStones.png");
+}
+
+.connect-hero {
+  background-image: linear-gradient(rgba(20, 40, 31, 0.72), rgba(29, 54, 42, 0.80)), url("images/1-1Support.png");
+}
+
+.login-hero {
+  background-image: linear-gradient(rgba(20, 40, 31, 0.72), rgba(29, 54, 42, 0.80)), url("images/LoginPebbles.png");
+}
+
+.header {
+  position: relative;
+  background: #2b4a3a;
+  color: #ffffff;
+  padding: 24px 32px 34px 32px;
+  text-align: center;
+  border-radius: 16px;
+  margin-bottom: 34px;
   animation: fadeInUp 0.7s ease-out;
 }
 
+.hero-banner .header {
+  background: transparent;
+  box-shadow: none;
+  border-bottom: none;
+  padding-top: 6px;
+  margin-top: 0;
+}
+
+.header-badge-left,
+.header-badge-right {
+  position: absolute;
+  top: -66px;
+  background-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 232, 204, 0.35);
+  color: #fdf3e7;
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.header-badge-left {
+  left: 26px;
+}
+
+.header-badge-right {
+  right: 26px;
+}
+
 .header h1 {
-  margin: 0 0 8px 0;
   font-size: 2.35rem;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
@@ -130,10 +180,14 @@ h3 {
 .banner-img {
   width: 100%;
   max-width: 460px;
-  height: auto;
-  border-radius: 14px;
+  height: 235px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
   border: 3px solid rgba(255, 232, 204, 0.55);
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 0 auto;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -147,9 +201,11 @@ h3 {
    (FLEXBOX CONTAINER #3)
    ========================================================= */
 .home-content {
-  max-width: 1000px;
+  width: 95%;
+  max-width: 1450px;
   margin: 0 auto 30px auto;
   text-align: center;
+  padding: 0 28px;
 }
 
 .mission-section h2 {
@@ -165,17 +221,28 @@ h3 {
 }
 
 .pathway-cards {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  width: 95%;
+  max-width: 1450px;
+  margin: 0 auto 30px auto;
+  padding: 0 28px;
 }
 
 .pathway-card {
   flex: 1;
   background: linear-gradient(180deg, #ffffff 0%, #fcf8f2 100%);
-  padding: 24px 26px 28px 26px;
   border-radius: 16px;
-  box-shadow: 0 8px 22px rgba(45, 76, 59, 0.09);
+  border-top: 5px solid #3f6d5a;
+  border-left: 5px solid #3f6d5a;
+  border-bottom: 5px solid #c8764b;
+  border-right: 5px solid #c8764b;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 28px;
+  box-shadow: 0 8px 22px rgba(45, 76, 59, 0.12);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -193,8 +260,12 @@ h3 {
 }
 
 .pathway-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 16px 34px rgba(45, 76, 59, 0.16);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(45, 76, 59, 0.18);
+  border-top: #c8764b;
+  border-bottom: #3f6d5a;
+  border-left-color: #c8764b;
+  border-right-color: #3f6d5a;
 }
 
 .card-img-wrap {
@@ -274,6 +345,7 @@ h3 {
 }
 
 .tag {
+  align-self: flex-start;
   display: inline-block;
   padding: 5px 14px;
   border-radius: 20px;
@@ -349,7 +421,9 @@ h3 {
   justify-content: space-between;
   background: linear-gradient(180deg, #ffffff 0%, #fcf8f3 100%);
   border-radius: 16px;
+  border-top: 5px solid #3f6d5a;
   border-left: 5px solid #3f6d5a;
+  border-bottom: 5px solid #c8764b;
   border-right: 5px solid #c8764b;
   box-shadow: 0 8px 22px rgba(45, 76, 59, 0.12);
   transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
@@ -358,6 +432,8 @@ h3 {
 .grid-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 30px rgba(45, 76, 59, 0.18);
+  border-top: #c8764b;
+  border-bottom: #3f6d5a;
   border-left-color: #c8764b;
   border-right-color: #3f6d5a;
 }
@@ -511,8 +587,20 @@ h3 {
   background-color: #fdf2e6;
 }
 
+/* =====================================================================
+   MEDIA QUERY #1: SMALL LAPTOP & LARGE TABLET SCREENS (1440px and smaller)
+   Hides corner header badges so they never overlap the centered title.
+   ===================================================================== */
+@media screen and (max-width: 1440px) {
+
+  .header-badge-left,
+  .header-badge-right {
+    display: none;
+  }
+}
+
 /* =========================================================
-   MEDIA QUERY #1: TABLET SCREENS (768px and smaller)
+   MEDIA QUERY #2: TABLET SCREENS (768px and smaller)
    Stacks the 3-column About Us Flexbox and Pathway cards.
    ========================================================= */
 @media screen and (max-width: 768px) {
@@ -521,6 +609,10 @@ h3 {
     margin-right: 0;
     margin-bottom: 4px;
     font-size: 1rem;
+  }
+
+  .main-nav {
+    gap: 20px;
   }
 
   .about-flex {
@@ -535,6 +627,7 @@ h3 {
 
   .pathway-cards,
   .onboarding-container {
+    grid-template-columns: 1fr;
     flex-direction: column;
     align-items: center;
   }
@@ -542,7 +635,7 @@ h3 {
   .pathway-card,
   .choice-card {
     width: 100%;
-    max-width: 550px;
+    max-width: 100%;
   }
 
   .community-grid {
@@ -551,7 +644,7 @@ h3 {
 }
 
 /* =========================================================
-   MEDIA QUERY #2: MOBILE & FOLDABLE SCREENS (560px and smaller)
+   MEDIA QUERY #3: MOBILE & FOLDABLE SCREENS (560px and smaller)
    Stacks top navigation links vertically and scales headings.
    ========================================================= */
 @media screen and (max-width: 560px) {
@@ -561,7 +654,7 @@ h3 {
 
   .main-nav {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     padding: 12px;
   }
 
@@ -598,7 +691,7 @@ h3 {
 }
 
 /* =========================================================
-   MEDIA QUERY #3: SMALL MOBILE SCREENS (360px and smaller)
+   MEDIA QUERY #4: SMALL MOBILE SCREENS (360px and smaller)
    Prevents horizontal overflow and tightens card padding
    down to 350px-360px viewports.
    ========================================================= */
