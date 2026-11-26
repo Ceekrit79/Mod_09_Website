@@ -59,6 +59,26 @@
     box-shadow: 0 8px 22px rgba(20, 40, 31, 0.16);
 }
 
+.footer-badges {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0 24px;
+    margin-bottom: 12px;
+}
+
+.footer-badge {
+    background: rgba(253, 243, 231, 0.14);
+    color: #fdf3e7;
+    border: 1px solid rgba(253, 243, 231, 0.28);
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
 .back-to-top {
     color: #f3c69f;
     font-weight: bold;
