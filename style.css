@@ -652,15 +652,16 @@ h3 {
   .banner-img {
     border-radius: 8px;
   }
-}
 
-.footer-divider {
-  display: none;
-}
 
-.back-to-top {
-  display: block;
-  margin-top: 8px;
+  .footer-divider {
+    display: none;
+  }
+
+  .back-to-top {
+    display: block;
+    margin-top: 8px;
+  }
 }
 
 /* =========================================================
