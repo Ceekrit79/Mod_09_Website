@@ -493,6 +493,16 @@ h3 {
   margin: 6px 0;
 }
 
+.crisis-link {
+  color: #8c4a27;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.crisis-link:hover {
+  color: #2b4a3a;
+}
+
 .hug-counter {
   margin-top: 16px;
 }
