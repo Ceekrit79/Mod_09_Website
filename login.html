@@ -83,8 +83,14 @@
                         <input type="text" id="login-alias" class="form-input" placeholder="e.g., QuietReader">
 
                         <label for="login-pass" class="form-label">Passphrase:</label>
-                        <input type="password" id="login-pass" class="form-input" placeholder="Enter your passphrase">
-
+                        <div class="password-wrap">
+                            <input type="password" id="login-pass" class="form-input"
+                                placeholder="Enter your passphrase">
+                            <button type="button" class="toggle-pass" onclick="togglePass('login-pass', this)"
+                                aria-label="Show passphrase">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
                         <button type="button" class="btn"
                             onclick="document.getElementById('loginConfirm').style.display='block'; document.getElementById('login-alias').value=''; document.getElementById('login-pass').value='';">🔑
                             Sign In</button>
@@ -120,8 +126,14 @@
                         </select>
 
                         <label for="reg-pass" class="form-label">Create a Passphrase:</label>
-                        <input type="password" id="reg-pass" class="form-input"
-                            placeholder="Choose a memorable passphrase">
+                        <div class="password-wrap">
+                            <input type="password" id="reg-pass" class="form-input"
+                                placeholder="Choose a memorable passphrase">
+                            <button type="button" class="toggle-pass" onclick="togglePass('reg-pass', this)"
+                                aria-label="Show passphrase">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
 
                         <button type="button" class="btn"
                             onclick="document.getElementById('registerConfirm').style.display='block'; document.getElementById('reg-alias').value=''; document.getElementById('reg-pass').value='';">✨

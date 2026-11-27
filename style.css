@@ -453,6 +453,33 @@ h3 {
   margin-bottom: 14px;
 }
 
+.password-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.password-wrap .form-input {
+  padding-right: 42px;
+  margin-bottom: 0;
+}
+
+.toggle-pass {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #5c6b61;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px;
+}
+
+.toggle-pass:hover {
+  color: #2b4a3a;
+}
+
 .card-heading {
   margin-top: 6px;
   margin-bottom: 10px;
@@ -581,6 +608,8 @@ h3 {
 .sanctuary-table tbody tr:hover {
   background-color: #fdf2e6;
 }
+
+
 
 /* =========================================================
    MEDIA QUERY #1: TABLET SCREENS (768px and smaller)
